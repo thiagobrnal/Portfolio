@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Orelega One', cursive;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    background-color: #D9D9D9;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+nav{
+    background-color: #D9D9D9;
+    margin: 20px;
+}
+
+.nav-link{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.select{
+    color: #86654B;
+    font-weight: 500;
+}
+
+.navbar-brand{
+    color: #86654B;
+    font-weight: 400;
+}
+
+a:hover{
+    color:#86654B !important
+}
+
+section{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#inicio{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+
+#about-me{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 80vh;
+    display: none;
+}
+
+#habilidades{
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.skills{
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagen-skill{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 150px;
+    height: auto;
+    aspect-ratio: 3/3;
+    object-fit: contain;
+}
+
+.p-skill{
+    margin: 0;
+}
+
+h2{
+    font-size: 150px;
+    margin: 0;
+    border-right: 5px solid;
+}
+
+h1{
+   margin: 0;
+   
+}
+
+.biografia{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.biografia p{
+    font-size: 20px;
+}
+
+.text-animacion{
+    animation: teclear 3s steps(35), efecto 0.5s step-end infinite alternate
+}
+
+.reverse{
+    animation: teclear-inverse 3s steps(35)
+}
+
+@keyframes teclear{
+    from{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes efecto{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes teclear-inverse{
+    from{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+       
+    }to{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+}
