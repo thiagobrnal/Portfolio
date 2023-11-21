@@ -19,6 +19,7 @@ nav{
 
 .nav-link{
     text-align: center;
+    justify-content: center;
     color: rgb(0, 0, 0);
     margin-right: 10px;
     padding: 2px;
@@ -44,8 +45,8 @@ a:hover{
 
 section{
     display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #inicio{
@@ -74,6 +75,24 @@ section{
     display: none;
 }
 
+#proyectos{
+    height: 80vh;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+#contacto{
+    height: 80vh;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
 .skills{
     margin-top: 50px;
     padding: 30px;
@@ -95,6 +114,10 @@ section{
     margin: 0;
 }
 
+.card{
+    box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+}
+
 h2{
     font-size: 150px;
     margin: 0;
@@ -106,6 +129,10 @@ h1{
    
 }
 
+h3{
+    color: #86654B;
+}
+
 .biografia{
     padding: 30px;
     justify-content: center;
@@ -113,6 +140,31 @@ h1{
     text-align: center;
     display: flex;
 }
+
+.btn{
+    background-color: #86654B;
+    color: #D9D9D9;
+}
+
+i{
+    color: black;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 20px;
+}
+
+.formulario{
+    margin-top: 30px;
+}
+
+.textForm{
+    justify-content: left;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+  }
 
 .biografia p{
     font-size: 20px;
