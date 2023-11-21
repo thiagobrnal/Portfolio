@@ -24,13 +24,13 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav ms-auto">
               <a class="nav-link select" href="#inicio" id="in" onclick="ocultarDiv('inicio', 'in')">INICIO</a>
               <a class="nav-link" href="#about-me" id="about" onclick="ocultarDiv('about-me', 'about')">SOBRE MI</a>
               <a class="nav-link" href="#habilidades" id="habi" onclick="ocultarDiv('habilidades', 'habi')">HABILIDADES</a>
               <a class="nav-link" href="#proyectos" id="proyec" onclick="ocultarDiv('proyectos', 'proyec')">PROYECTOS</a>
               <a class="nav-link" href="#contacto" id="contac" onclick="ocultarDiv('contacto', 'contac')">CONTACTO</a>
-              
+              <button class="btn modo" id="mode-btn"><i class="fa-solid fa-circle-half-stroke fa-sm red"></i></button> 
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
       <section id="inicio">
         <h1>Hola,soy</h1>
         <h2 class="text-animacion" id="titulo">Bernal Thiago</h2>
-        <p>Tecnologias: JAVA, Spring Boot, HTML5, CSS3, Bootstrap, JavaScript, MariaDB, MVC, Git y github</p>
+        <p class="cambiable">Tecnologias: JAVA, Spring Boot, HTML5, CSS3, Bootstrap, JavaScript, MariaDB, MVC, Git y github</p>
       </section>
       
       <!--About me-->
@@ -50,7 +50,7 @@
                 <img src="img/foto-personal.jpg" alt="foto personal CV" class="img-fluid">
             </div>
             <div class="col-md-6 order-md-2 biografia">
-                  <p>
+                  <p class="cambiable">
                     Estudiante de ingeniería disciplinado y comprometido cursando el segundo semestre de la carrera para ampliar los conocimientos adquiridos en la tecnicatura. En el transcurso de la tecnicatura y las prácticas profesionales he desarrollado la capacidad de toma de decisiones bajo situaciones criticas además de liderar los proyectos hacia un objetivo común. Esto sumado a mis conocimientos teóricos, prácticos y mi proactividad serán de gran ayuda en los próximos y actuales proyectos de la compañía
                   </p>
             </div>
@@ -64,36 +64,36 @@
               <div class="row align-items-center">
                   <div class="col">
                       <img class="imagen-skill" src="img/java-logo.png" alt="imagen JAVA"/>
-                      <p class="p-skill">JAVA</p>
-                      <p class="p-skill">Nivel:Avanzado</p>
+                      <p class="p-skill cambiable">JAVA</p>
+                      <p class="p-skill cambiable">Nivel:Avanzado</p>
                   </div>
                   <div class="col ms-auto">
                       <img class="imagen-skill" src="img/spring-logo.png" alt="imagen SPRING"/>
-                      <p class="p-skill">SPRING</p>
-                      <p class="p-skill">Nivel:Intermedio</p>
+                      <p class="p-skill cambiable">SPRING</p>
+                      <p class="p-skill cambiable">Nivel:Intermedio</p>
                   </div>
                   <div class="col mas-auto">
                       <img class="imagen-skill" src="img/mariaDB-logo.png" alt="imagen MariaDB"/>
-                      <p class="p-skill">MariaDB</p>
-                      <p class="p-skill">Nivel:Intermedio</p>
+                      <p class="p-skill cambiable">MariaDB</p>
+                      <p class="p-skill cambiable">Nivel:Intermedio</p>
                   </div>
 
                   <div class="w-100"></div>
 
                   <div class="col ms-auto">
                       <img class="imagen-skill" src="img/js-logo.png" alt="Imagen JS"/>
-                      <p class="p-skill">HTML</p>
-                      <p class="p-skill">Nivel:Avanzado</p>
+                      <p class="p-skill cambiable">HTML</p>
+                      <p class="p-skill cambiable">Nivel:Avanzado</p>
                   </div>
                   <div class="col ms-auto">
                       <img class="imagen-skill" src="img/css-logo.png" alt="Imagen CSS"/>
-                      <p class="p-skill">CSS</p>
-                      <p class="p-skill">Nivel:Intermedio</p>
+                      <p class="p-skill cambiable">CSS</p>
+                      <p class="p-skill cambiable">Nivel:Intermedio</p>
                   </div>
                   <div class="col ms-auto">
                       <img class="imagen-skill" src="img/html-logo.png" alt="Imagen HTML"/>
-                      <p class="p-skill">JavaScript</p>
-                      <p class="p-skill">Nivel:Basico</p>
+                      <p class="p-skill cambiable">JavaScript</p>
+                      <p class="p-skill cambiable">Nivel:Basico</p>
                   </div>
               </div>
           </div>
@@ -145,10 +145,10 @@
       <!-- modify this form HTML and place wherever you want your form -->
       <div class="col col-md-6 textForm">
         <h3>Contacto</h2>
-          <p>Por favor rellene el siguiente formulario para poder contactarnos</p>
+          <p class="cambiable">Por favor rellene el siguiente formulario para poder contactarnos</p>
           <h3>Redes Sociales</h4>
-          <a href="https://www.linkedin.com/in/thiagobrnal/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></i></a>
-          <a href="https://www.instagram.com/thiagobrnal/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          <a href="https://www.linkedin.com/in/thiagobrnal/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl red"></i></i></a>
+          <a href="https://www.instagram.com/thiagobrnal/" target="_blank"><i class="fa-brands fa-instagram fa-2xl red"></i></a>
       </div>
       <div class="col col-md-6 formulario">
         <form action="https://formspree.io/f/xoqozbla" method="POST">
@@ -160,7 +160,7 @@
             <label for="exampleFormControlTextarea1" class="text-right">Tu Mensaje:</label>
             <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn">Enviar</button>
+          <button type="submit" class="btn enviar">Enviar</button>
         </form>
       </div>
     </section>

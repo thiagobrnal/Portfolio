@@ -39,8 +39,9 @@ nav{
     font-weight: 400;
 }
 
-a:hover{
-    color:#86654B !important
+
+.navbar-nav a.nav-link:hover{
+    color:#86654B 
 }
 
 section{
@@ -141,10 +142,28 @@ h3{
     display: flex;
 }
 
-.btn{
+.enviar{
     background-color: #86654B;
     color: #D9D9D9;
 }
+
+button i{
+    margin: 0;
+    padding: 0;
+}
+
+.modo{
+    background-color: #D9D9D9;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modo:hover{
+    background-color: #c9c9c9;
+}
+
 
 i{
     color: black;
@@ -176,6 +195,72 @@ label {
 
 .reverse{
     animation: teclear-inverse 3s steps(35)
+}
+
+/*Modo*/
+body.dark{
+    background-color: rgb(13, 21, 34);
+}
+
+body.dark nav{
+    background-color:  rgb(13, 21, 34);
+}
+
+body.dark .navbar a{
+    color: whitesmoke;
+}
+
+body.dark .navbar .disable{
+    color: goldenrod;
+}
+
+body.dark .navbar-nav a.nav-link:hover{
+    color: goldenrod;
+}
+
+body.dark .navbar a.select{
+    color: goldenrod;
+}
+
+body.dark h1{
+    color: whitesmoke;
+}
+
+body.dark h2{
+    color: whitesmoke;
+}
+
+body.dark h3{
+    color: goldenrod;
+}
+
+body.dark p.cambiable{
+    color: whitesmoke;
+}
+
+body.dark i.red{
+    color: whitesmoke;
+}
+
+body.dark label{
+    color: whitesmoke;
+}
+
+body.dark .modo{
+    background-color: rgb(13, 21, 34);
+}
+
+body.dark .modo:hover{
+    background-color: rgb(21, 33, 53);
+}
+
+body.dark .enviar{
+    background-color: goldenrod;
+}
+
+body.dark .enviar:hover{
+    background-color: rgb(13, 21, 34);
+    color: whitesmoke;
 }
 
 @keyframes teclear{
