@@ -256,6 +256,7 @@ body.dark .modo:hover{
 
 body.dark .enviar{
     background-color: goldenrod;
+    color: whitesmoke;
 }
 
 body.dark .enviar:hover{
