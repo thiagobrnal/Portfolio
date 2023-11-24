@@ -10,7 +10,7 @@ function cambiarTexto() {
     const $animacion = document.getElementById("titulo")
 
     if ($animacion.innerText === 'Bernal Thiago') {
-        $animacion.innerText = 'Backend Dev'
+        $animacion.innerText = 'Back-end Dev'
         $animacion.classList.replace("reverse","text-animacion")
     } else {
         $animacion.innerText = 'Bernal Thiago'
